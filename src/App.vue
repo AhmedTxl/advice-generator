@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <generator />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import generator from './components/generator.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    generator
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+@media only screen and (max-width: 565px) {
+  #app {
+    width: 90%;
+  }
+
+  .containerDiv {
+    width: 100%;
+  }
+
+  button {
+    text-align: center;
+  }
 }
 </style>
