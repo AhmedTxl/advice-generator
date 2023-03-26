@@ -100,3 +100,13 @@ button {
   justify-content: center;
   margin: 0 auto;
 }
+
+a {
+  transition: all 290ms;
+}
+
+a:hover {
+  transform: scale(0.1);
+  color: #18da90;
+  font-size: 22px;
+}

@@ -29,6 +29,12 @@
       </svg>
     </button>
   </main>
+  <footer class="text-slate-300 mt-8">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    <br>
+    Coded by <a href="https://github.com/AhmedTxl">AhmedTx</a>.
+  </footer>
 </template>
 
 <script>
