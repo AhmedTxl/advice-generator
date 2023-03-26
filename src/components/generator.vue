@@ -20,7 +20,8 @@
     </div>
     <button
       class="relative bottom-[32px] p-3 w-16 h-16 rounded-full bg-[#18da90] hover:shadow-[0_0_50px_#00f57a] transition ease-out shadow-[#00f57a] active:bg-[#00d66b]"
-      @click="fetchData()">
+      @click="fetchData()"
+      aria-label="Fetch Button">
       <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" class="max-[375px]:w-[25px] max-[375px]:h-[25px]">
         <path
           d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"
