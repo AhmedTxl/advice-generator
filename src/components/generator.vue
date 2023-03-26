@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="containerDiv shadow-xl justify-center flex flex-col items-center">
+    <div class="containerDiv shadow-[32px_36px_28px_4px_rgba(0,0,0,.1)] justify-center flex flex-col items-center">
       <p class=" text-sm text-[#52ffa8] uppercase font-medium tracking-[0.35em]" v-if="!loading">
         advice #{{ adviceID }}
       </p>
