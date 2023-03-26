@@ -41,7 +41,6 @@ export default {
       adviceContent: null,
       loading: true,
       errored: false,
-      visible: true,
     };
   },
   methods: {
@@ -53,7 +52,6 @@ export default {
           .then((response) => {
             this.adviceID = response.data.slip.id;
             this.adviceContent = response.data.slip.advice;
-            this.visible = true;
           })
           .catch((error) => {
             console.log(error);
