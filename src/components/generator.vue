@@ -1,7 +1,6 @@
 <template>
   <div class="containerDiv justify-center flex flex-col items-center">
-    <p 
-      class=" text-sm text-[#52ffa8] uppercase font-medium tracking-[0.35em]" v-if="!loading">
+    <p class=" text-sm text-[#52ffa8] uppercase font-medium tracking-[0.35em]" v-if="!loading">
       advice #{{ adviceID }}
     </p>
     <div v-show="loading">
@@ -48,7 +47,11 @@ export default {
       this.loading = true;
       setTimeout(() => {
         axios
-          .get("https://api.adviceslip.com/advice")
+          .get("https://api.adviceslip.com/advice", {
+            params: {
+              _: new Date().getTime()
+            }
+          })
           .then((response) => {
             this.adviceID = response.data.slip.id;
             this.adviceContent = response.data.slip.advice;
